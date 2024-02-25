@@ -542,6 +542,7 @@ class _MyWidgetState extends State<MyHomePage> {
                 Column(
                   children: [
                     CircleAvatar(
+                      backgroundImage: AssetImage('images/rewards.png'),
                       radius: 35,
                       backgroundColor: Color.fromARGB(255, 151, 18, 104),
                     ),
@@ -554,6 +555,7 @@ class _MyWidgetState extends State<MyHomePage> {
                 Column(
                   children: [
                     CircleAvatar(
+                      backgroundImage: AssetImage('images/offers.png'),
                       radius: 35,
                       backgroundColor: Color.fromARGB(255, 14, 83, 50),
                     ),
@@ -566,6 +568,7 @@ class _MyWidgetState extends State<MyHomePage> {
                 Column(
                   children: [
                     CircleAvatar(
+                      backgroundImage: AssetImage('images/ref.png'),
                       radius: 35,
                       backgroundColor: Color.fromARGB(255, 152, 59, 233),
                     ),
@@ -674,102 +677,85 @@ class _MyWidgetState extends State<MyHomePage> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 40),
-              child: FloatingActionButton(
-                backgroundColor: Colors.white,
-                onPressed: () {},
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(bottom: 20, left: 10),
-                      child: Icon(
-                        Icons.speed_sharp,
-                        color: Color.fromARGB(255, 24, 6, 127),
-                        size: 30,
-                      ),
+              child: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 20, left: 10),
+                    child: Icon(
+                      Icons.speed_sharp,
+                      color: Color.fromARGB(255, 24, 6, 127),
+                      size: 30,
                     ),
-                    Text(
-                      '     Check your CIBIL score for\n     free',
-                      style: TextStyle(fontSize: 17),
+                  ),
+                  Text(
+                    '     Check your CIBIL score for\n     free',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 100),
+                    child: Icon(
+                      Icons.chevron_right_outlined,
+                      size: 35,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 100),
-                      child: Icon(
-                        Icons.chevron_right_outlined,
-                        size: 35,
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 40),
-              child: FloatingActionButton(
-                backgroundColor: Colors.white,
-                onPressed: () {},
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(bottom: 10, left: 10),
-                      child: Icon(
-                        Icons.update,
-                        color: Color.fromARGB(255, 24, 6, 127),
-                        size: 30,
-                      ),
+              child: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 10, left: 10),
+                    child: Icon(
+                      Icons.update,
+                      color: Color.fromARGB(255, 24, 6, 127),
+                      size: 30,
                     ),
-                    Text(
-                      '    Show transaction history',
-                      style: TextStyle(fontSize: 17),
+                  ),
+                  Text(
+                    '    Show transaction history',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 115),
+                    child: Icon(
+                      Icons.chevron_right_outlined,
+                      size: 35,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 115),
-                      child: Icon(
-                        Icons.chevron_right_outlined,
-                        size: 35,
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 40, bottom: 40),
-              child: FloatingActionButton(
-                backgroundColor: Colors.white,
-                onPressed: () {},
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(
-                        bottom: 10,
-                        left: 10,
-                      ),
-                      child: Icon(
-                        Icons.home_work_outlined,
-                        color: Color.fromARGB(255, 24, 6, 127),
-                        size: 30,
-                      ),
+            const Padding(
+              padding: EdgeInsets.only(top: 40, bottom: 40),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      bottom: 10,
+                      left: 10,
                     ),
-                    Text(
-                      '     Check bank balance',
-                      style: TextStyle(fontSize: 17),
+                    child: Icon(
+                      Icons.home_work_outlined,
+                      color: Color.fromARGB(255, 24, 6, 127),
+                      size: 30,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 150),
-                      child: Icon(
-                        Icons.chevron_right_outlined,
-                        size: 35,
-                      ),
-                    )
-                  ],
-                ),
+                  ),
+                  Text(
+                    '     Check bank balance',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 150),
+                    child: Icon(
+                      Icons.chevron_right_outlined,
+                      size: 35,
+                    ),
+                  )
+                ],
               ),
             ),
-            const Text(
-              '   invite friends to get Rs.201',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-            )
-            
           ],
         ));
   }
